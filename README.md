@@ -1,6 +1,7 @@
 # GATA
 
 Hassan Shah, Charlie Neuenschwander, Evan Ji
+DSCI 560
 
 The generative AI teaching assistant (GATA) addresses students' need for fast, context-dependent answers when studying and completing assignments. 
 
