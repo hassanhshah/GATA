@@ -68,7 +68,8 @@ The application will be accessible in your web browser at http://localhost:8501
 ## Code Structure
 - `gata_app.py`: Main Python script containing application logic
 - `secrets.toml`: Configuration file containing sensitive data such as database credentials and api secret keys; should be placed within the .streamlit subdiretory
-
+- `requirements.txt`: File listing all Python dependencies
+  
 ## How it Works: Context Retrieval with HyDE
 
 The application extracts context from syllabi, textbooks, slides, and videos to provide more accurate responses to user queries. Multiple measures are taken to ensure maximum performance. In the current iteration, four vector databases are provided, each specialized for textbooks, lecture videos, slides, or syllabus information. Stored in each vector database is specific metadata that can be extracted to provide sources of information such as images and videos. Hypothetical Document Embedding (HyDE) is used to retrieve this information accurately. Retrieval often struggles to match a query with an answer through cosine similarity and other vector embedding retrieval techniques. HyDE generates hypothetical answers that more closely align with the embedding structure of ideal answers. Lastly, there is a similarity threshold that the retrievers must reach when returning information. This specification forces GATA to provide only information most relevant to individual queries.
