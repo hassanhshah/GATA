@@ -66,9 +66,9 @@ python streamlit run gata_app.py
 The application will be accessible in your web browser at http://localhost:8501
 
 ## Code Structure
-- `gata_app.py`: Main Python script containing application logic
-- `secrets.toml`: Configuration file containing sensitive data such as database credentials and api secret keys; should be placed within the .streamlit subdiretory
+- `gata_app.py`: Main script containing application logic
 - `requirements.txt`: File listing all Python dependencies
+- `vdb_setup.py`: Script used to create the initial vector databases necessary for context retrieval
   
 ## How it Works: Context Retrieval with HyDE
 
