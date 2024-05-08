@@ -9,7 +9,6 @@ GATA is a Python application built using Streamlit to create a conversational in
 - **Chat Interfacce:** Users can converse with the chatbot in a natural language format
 - **Uploading Content:** The application can process PDF documents and lecture videos with transcripts to store text information in retrievable chunks
 - **Data Storage:** MongoDB is used for data storage and user management. FAISS vector databases are used to store contextual information
-- **Data Storage:** MongoDB is used for data storage and user management. FAISS vector databases are used to store contextual information
 - **Web Application:** The chatbot interface is built using Streamlit, making it accessible via a web browser
 - **Authentication:** Users can log in or sign up as students or instructors to access personalized features
 - **Source Retrieval:** The application retrieves relevant sources from syllabi, textbooks, slides, and videos for answering user queries
@@ -24,9 +23,23 @@ Ensure you have Python installed, then run the following command to install the 
 pip install -r requirements.txt
 ```
 
+### Vector Database Setup
+
+To initialize the vector databases for slide, lecture video, syllabus, and textbook context retrieval:
+
+1. Navigate to the `vdb_setup.py` script.
+2. Fill in the paths to your syllabus, textbook PDFs, lecture video transcripts, and lecture slides folders
+```python
+syllabus = "" # Enter the path to the syllabus pdf file
+tb = "" # Enter the path to the textbook pdf file
+transcript = "" # Enter the path to the lecture video transcript folder
+pdf_path = "" # Enter the path to the lecture slides folder
+```
+3. Run the `vdb_setup.py` script.
+
 ## Configuration
 
-Update or create secrets.toml within the .streamlit subdirectory with MongoDB and OpenAI API keys to connect to the necessary services
+Update or create `secrets.toml` within the `.streamlit` subdirectory with MongoDB and OpenAI API keys to connect to the necessary services
 ```python
 [openai]
 api_key = ""
@@ -48,8 +61,8 @@ python streamlit run gata_app.py
 The application will be accessible in your web browser at http://localhost:8501
 
 ## Code Structure
-- **gata_app.py:** Main Python script containing application logic
-- **secrets.toml:** Configuration file containing sensitive data such as database credentials and api secret keys; should be placed within the .streamlit subdiretory
+- `gata_app.py`: Main Python script containing application logic
+- `secrets.toml`: Configuration file containing sensitive data such as database credentials and api secret keys; should be placed within the .streamlit subdiretory
 
 ## How it Works: Context Retrieval with HyDE
 
@@ -61,6 +74,7 @@ GATA is just the beginning. This application showcases the potential of configur
 
 ## Demo Video
 For in depth examples of usage, please refer to the GATA product demo video:
+[GATA Demo Video](https://youtu.be/PGZ1gMrjBu4)
 
 
 
