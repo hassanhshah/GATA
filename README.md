@@ -82,6 +82,7 @@ GATA is just the beginning. This application showcases the potential of configur
 For in depth examples of usage, please refer to the GATA product demo video:
 [GATA Demo Video](https://youtu.be/PGZ1gMrjBu4)
 
+https://github.com/hassanhshah/GATA/assets/98497536/299483b7-e624-404b-a271-d34dd3674167
 
 
 
