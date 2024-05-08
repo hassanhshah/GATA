@@ -1,0 +1,13 @@
+faiss-cpu
+fitz
+langchain
+langchain_community
+langchain_core
+langchain_openai
+openai
+pandas
+pymongo
+PyPDF2
+python-dateutil
+sentence-transformers
+streamlit
