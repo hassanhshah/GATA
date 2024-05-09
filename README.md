@@ -48,14 +48,13 @@ pdf_path = "" # Enter the path to the lecture slides folder
 
 Update or create `secrets.toml` within the `.streamlit` subdirectory with MongoDB and OpenAI API keys to connect to the necessary services
 ```python
-[openai]
-api_key = ""
+open_api_key = "<YOUR_API_KEY>"
 
-[mongo]
-host = ""
-username = ""
-password = ""
-dbname = ""
+[mysql]
+host = "<YOUR_DATABASE_HOST>"
+user = "<YOUR_DATABASE_USER>"
+password = "<YOUR_DATABASE_PASSWORD>"
+database = "<YOUR_DATABASE_NAME>"
 ```
 
 ## Usage
