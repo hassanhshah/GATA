@@ -1,8 +1,5 @@
 # GATA
 
-Hassan Shah, Charlie Neuenschwander, Evan Ji  
-DSCI 560
-
 The generative AI teaching assistant (GATA) addresses students' need for fast, context-dependent answers when studying and completing assignments. 
 
 GATA is a Python application built using Streamlit to create a conversational interface powered by OpenAI's language models and Langchain's retrieval libraries. It allows users to interact with the chatbot for educational assistance. The multimodal chatbot provides students with a text answer, specific lecture slides, and video clips from classroom lectures. GATA only retrieves relevant sources that help answer specific questions. Instructors can quickly and easily add to the knowledge base.
