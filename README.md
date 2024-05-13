@@ -34,10 +34,10 @@ To initialize the vector databases for slide, lecture video, syllabus, and textb
 1. Navigate to the `vdb_setup.py` script.
 2. Fill in the paths to your syllabus, textbook PDFs, lecture video transcripts, and lecture slides folders
 ```python
-syllabus = "" # Enter the path to the syllabus pdf file
-tb = "" # Enter the path to the textbook pdf file
-transcript = "" # Enter the path to the lecture video transcript folder
-pdf_path = "" # Enter the path to the lecture slides folder
+syllabus = "path/to/syllabus.pdf"  # Enter the path to the syllabus PDF file
+tb = "path/to/textbook.pdf"        # Enter the path to the textbook PDF file
+transcript = "path/to/transcripts" # Enter the path to the lecture video transcript folder
+pdf_path = "path/to/slides"        # Enter the path to the lecture slides folder
 ```
 3. Run the `vdb_setup.py` script.
 
